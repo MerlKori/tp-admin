@@ -1,9 +1,0 @@
-{
-  "appname": "tvій prostir",
-  "routes": {
-    "shop": "Магазин",
-    "contacts": "Контактні дані",
-    "deliveryAndPayment": "Доставка та Оплата",
-    "about": "Про магазин"
-  }
-}

@@ -1,0 +1,25 @@
+:root {
+  --c-white-rgb: 255,255,255;
+  --c-grey1-rgb: 226,229,236;
+  --c-grey2-rgb: 173,182,201;
+  --c-blue1-rgb: 0,59,189;
+  --c-blue2-rgb: 7,16,36;
+  --c-red1-rgb: 220,10,10;
+
+  --bg-main: rgb(var(--c-white-rgb));
+  --bg-secondary: rgb(var(--c-grey1-rgb));
+  --bg-third: rgb(var(--c-grey2-rgb));
+
+
+  --text-color: rgb(var(--c-blue2-rgb));
+  --error-text-color: rgb(var(--c-red1-rgb));
+
+  --border-color: #D6D1D1;
+  --border: 1px solid var(--border-color);
+  --sidebar-bg-color: rgb(var(--c-grey1-rgb));
+
+  --main-button-bg-color: 0,59,189;
+  --seccondary-button-bg-color: 173,182,201;
+
+  --border-radius: 16px;
+}
