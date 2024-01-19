@@ -26,12 +26,15 @@ export default defineNuxtConfig({
         include: ['Button', 'DataTable']
     }
   },
-  // i18n: {
-  //   langDir: './lang',
-  //   locales: [
-  //     { code: 'en', file: 'en.json' },
-  //     { code: 'uk', file: 'uk.json' }
-  //   ]
-  // },
-  // css: ['primevue/resources/themes/lara-light-green/theme.css']
+  i18n: {
+    langDir: './lang',
+    locales: [
+      { code: 'en', file: 'en.json' },
+      { code: 'uk', file: 'uk.json' }
+    ]
+  },
+  css: [
+    'primevue/resources/themes/lara-light-green/theme.css',
+    './assets/css/index.css'
+  ]
 })

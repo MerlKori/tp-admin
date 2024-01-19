@@ -1,12 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: false,
   extends: [
-    '../layers/ui-layer'
+    '../layers/ui-layer',
+    '../layers/core-layer'
   ],
   components: [
     '~/components',
-    { path: '../layers/ui-layer/components', prefix: 'Special' },
+    { path: '../layers/ui-layer/components', prefix: 'UI' },
+    { path: '../layers/core-layer/components', prefix: 'Data' },
   ],
   modules: [
     '@pinia/nuxt'
