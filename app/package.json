@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "repository:init": "node ./repository/init.js"
+  },
+  "devDependencies": {
+    "nuxt": "^3.9.1",
+    "vue": "^3.4.10",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@foundation/core": "^0.0.1",
+    "@foundation/ui-layer": "^0.0.1",
+    "@pinia/nuxt": "^0.5.1",
+    "ofetch": "^1.3.3",
+    "pinia": "^2.1.7"
+  }
+}
