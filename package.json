@@ -1,17 +1,15 @@
 {
-  "name": "tp-admin",
+  "name": "nuxt-app-base-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run dev --workspace app",
-    "repository:init": "npm run repository:init --workspace app"
+    "dev": "npm run dev -w app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "./layers/ui-layer",
     "./layers/core-layer",
     "./app"
   ]

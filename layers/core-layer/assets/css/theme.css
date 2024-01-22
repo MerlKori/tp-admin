@@ -1,0 +1,40 @@
+:root {
+  --c-white-rgb: 255,255,255;
+  --c-grey1-rgb: 226,229,236;
+  --c-grey2-rgb: 173,182,201;
+  --c-blue1-rgb: 0,59,189;
+  --c-blue2-rgb: 7,16,36;
+  --c-red1-rgb: 220,10,10;
+
+  --primary-dark: #252525;
+  --bg-main: #F5F5F5;
+  --light-gray-2: #E7E7E7;
+
+
+  /* --bg-main: var(--light-gray); */
+  /* --bg-secondary: rgb(var(--c-grey1-rgb));
+  --bg-third: rgb(var(--c-grey2-rgb));
+
+
+  --text-color: rgb(var(--c-blue2-rgb));
+  --error-text-color: rgb(var(--c-red1-rgb));
+
+  --border-light: 1px solid var(--light-gray-2);
+
+  --sidebar-bg-color: var(--primary-dark);
+
+  --main-button-bg-color: 0,59,189;
+  --seccondary-button-bg-color: 173,182,201;
+
+  --border-radius: 16px; */
+}
+
+.p-button {
+  color: #ffffff;
+  background: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border-radius: 6px;
+}

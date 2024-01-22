@@ -1,12 +1,11 @@
 <script setup lang="ts">
-interface IProps {
-  icon: string
-}
-defineProps<IProps>()
+import { PrimeButton } from '#components'
+
+defineProps<{ icons: string }>()
 </script>
 
 <template>
   <PrimeButton>
-    <slot /> {{ icon }}
+    <slot/>
   </PrimeButton>
 </template>

@@ -1,5 +1,6 @@
 import { defineStore, acceptHMRUpdate } from 'pinia'
 import type { LocationQueryRaw } from 'vue-router'
+// import { $resolveDataPath } from '~/utils/resolveDataPath'
 
 export interface INavigationItem {
   name: string
@@ -14,6 +15,7 @@ export interface INavigationItem {
 
 export interface IOpenedPage {
   type: 'showList' | 'showForm' | 'showPage'
+  // entity
 }
 
 function showList () {}
