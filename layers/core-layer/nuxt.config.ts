@@ -2,7 +2,6 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
-  devtools: { enabled: false },
   modules: [
     'nuxt-primevue',
     '@nuxtjs/i18n'
@@ -12,14 +11,14 @@ export default defineNuxtConfig({
   primevue: {
     components: {
       prefix: 'Prime',
-      include: ['Button']
+      include: ['Button', 'Menu']
     },
     options: {
       ripple: true
     }
   },
   css: [
-    // 'primevue/resources/themes/lara-light-green/theme.css',
+    'primevue/resources/themes/lara-light-green/theme.css',
     '~ui/assets/css/index.css'
   ]
 })

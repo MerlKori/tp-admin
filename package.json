@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run dev -w app"
+    "dev": "npm run dev -w app",
+    "build": "npm run build -w app",
+    "preview": "node ./app/.output/server/index.mjs"
   },
   "keywords": [],
   "author": "",

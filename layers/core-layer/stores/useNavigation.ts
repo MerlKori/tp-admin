@@ -1,44 +1,23 @@
 import { defineStore, acceptHMRUpdate } from 'pinia'
-import type { LocationQueryRaw } from 'vue-router'
-// import { $resolveDataPath } from '~/utils/resolveDataPath'
+import type { TNavItem } from '../types'
 
-export interface INavigationItem {
-  name: string
-  type: 'item' | 'group'
-  code: string
-  order?: number
-  icon?: string
-  route?: string
-  query?: LocationQueryRaw
-  submenu?: Array<INavigationItem>
-}
 
-export interface IOpenedPage {
-  type: 'showList' | 'showForm' | 'showPage'
-  // entity
-}
-
-function showList () {}
-function showForm () {}
-function showPage () {}
 
 export const useNavigation = defineStore('useNavigation', {
   state: () => ({
-    activePages: [] as Array<IOpenedPage>,
+    // activePages: [] as Array<TNavItem>,
 
 
     items: [
       {
         code: 'category',
-        name: 'Categories',
-        type: 'item',
+        label: 'Categories',
         route: '/test',
         query: { id: 1, entity: 'Brand' }
       },
       {
         code: 'category',
-        name: 'Categories',
-        type: 'item',
+        label: 'Categories',
         route: '/test',
         query: { id: 2, entity: 'Brand' }
       },
@@ -79,24 +58,20 @@ export const useNavigation = defineStore('useNavigation', {
       //   type: 'item',
       //   route: '/dataList/Brand'
       // },
-    ] as Array<INavigationItem>
+    ] as Array<TNavItem>
   }),
 
   getters: {},
 
   actions: {
-    register (data: INavigationItem, path: string) {
-      if (path) {
-        // const resolvedPath: any = $resolveDataPath(this.items, path)
-        // resolvedPath.target.submenu.push(data)
-      } else {
-        this.items.push(data)
-      } 
-    },
-    
-    open (routeCfg: INavigationItem) {
-      // console.log('open', routeCfg);
-    }
+    // register (data: INavigationItem, path: string) {
+    //   if (path) {
+    //     // const resolvedPath: any = $resolveDataPath(this.items, path)
+    //     // resolvedPath.target.submenu.push(data)
+    //   } else {
+    //     this.items.push(data)
+    //   } 
+    // }
   }
 })
 
