@@ -10,5 +10,12 @@ export default defineNuxtConfig({
   ],
   pinia: {
     storesDirs: ['./stores/**', '../layers/core-layer/stores/**'],
+  },
+  runtimeConfig: {
+    public: {
+      api: {
+        baseURL: process.env.API_BASE_URL
+      }
+    }
   }
 })

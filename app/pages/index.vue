@@ -1,11 +1,14 @@
 <script setup lang="ts">
-const val = ref('') 
+// const val = ref('') 
 </script>
 
 <template>
   <div>
-    index page
+    <!-- index page
     <UiInputText v-model="val"/>
-    {{ val }}
+    {{ val }} -->
+    <DataTable
+      entity="products"
+    />
   </div>
 </template>
