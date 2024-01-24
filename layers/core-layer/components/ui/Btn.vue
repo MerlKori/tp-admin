@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { PrimeButton } from '#components'
+import PrimeButton from 'primevue/button'
+
 type BtnProps = {
   outlined?: boolean
   disabled?: boolean

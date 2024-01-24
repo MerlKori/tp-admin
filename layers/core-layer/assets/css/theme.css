@@ -6,10 +6,20 @@
   --c-blue2-rgb: 7,16,36;
   --c-red1-rgb: 220,10,10; */
 
+  /* colors */
+  --dark-200: #C5C3C3;
+  --dark-600: #3C3C3C;
   --dark-900: #252525;
   /* --bg-main: #F5F5F5; */
   --white-100: #FCFAFA;
   --white-200: #E7E7E7;
+
+  --app-header-bgc: var(--white-200);
+
+  /* app sidebar */
+  --sidebar-bg-color: var(--dark-900);
+  --sidebar-active-item-bg-color: var(--dark-600);
+  --sidebar-gap: 25px;
 
   
 
@@ -32,3 +42,13 @@
   --border-radius: 16px; */
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

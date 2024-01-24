@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { PrimeMenu } from '#components'
+const nav = useNavigation()
 </script>
 
 <template>
-
+  <PrimeMenu :model="nav.items" />
 </template>
