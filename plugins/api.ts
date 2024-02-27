@@ -5,15 +5,15 @@ import ProductsModule from '~/repository/modules/products';
 import Entity from '~/repository/entity'
 
 interface IApiInstance {
-  products: ProductsModule;
-  [prop: string]: any
+  products: ProductsModule
+  [prop: string]: Entity<unknown>
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig();
 
   const fetchOptions: FetchOptions = {
-    baseURL: config.public.apiBaseUrl as string
+    baseURL: config.public.api.baseURL as string
   };
 
   // Create a new instance of $fecther with custom option

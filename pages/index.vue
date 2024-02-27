@@ -7,8 +7,5 @@
     <!-- index page
     <UiInputText v-model="val"/>
     {{ val }} -->
-    <DataTable
-      entity="products"
-    />
   </div>
 </template>

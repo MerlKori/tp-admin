@@ -1,25 +1,12 @@
-import type { FetchOptions, $Fetch } from 'ofetch';
-import type { AsyncDataOptions } from '#app';
+import type { FetchOptions, $Fetch } from 'ofetch'
+// import type { AsyncDataOptions } from '#app'
+// import { useAsyncData } from '#app'
+import type { IProduct } from '~/types'
 
 // locals
 import Entity from '../entity';
-// import FetchFactory from '../factory';
-
-type IProduct = {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  category: string;
-  image: string;
-  rating: {
-    rate: number;
-    count: number;
-  }
-}
 
 class ProductEntity extends Entity<IProduct[]> {
-  // private RESOURCE = '/products';
   constructor (fetcher: $Fetch) {
     super({
       fetcher,

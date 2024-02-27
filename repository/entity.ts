@@ -1,8 +1,9 @@
 // 3rd's
 import type { $Fetch, FetchOptions } from 'ofetch';
-// import { $Fetch, FetchOptions } from 'ofetch';
+import type { AsyncDataOptions } from '#app'
+import { useAsyncData } from '#app'
 
-export type TEntityAttr = {
+export type IEntityAttr = {
   id: string
   dataType: 'String' | 'Number'
 }
@@ -14,12 +15,12 @@ export type TEntityAttr = {
 type TEntityOptions = {
   fetcher: $Fetch
   name: string
-  attrs: Array<TEntityAttr>
+  attrs: Array<IEntityAttr>
 }
 
 class Entity<T> {
   private $fetch: $Fetch
-  attrs: Array<TEntityAttr>
+  attrs: Array<IEntityAttr>
   name: string
 
   constructor({
@@ -32,7 +33,7 @@ class Entity<T> {
     this.name = name
   }
 
-  async select (fetchOptions: FetchOptions<'json'>): Promise<T> {
+  async select (fetchOptions?: FetchOptions<'json'>): Promise<T> {
     return this.$fetch<T>( 
       `/${this.name}`,
       { 

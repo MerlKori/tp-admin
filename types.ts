@@ -12,7 +12,7 @@ export type TNavItem = {
 
 export type TDataType = 'String' | 'Number' | 'Enum' | 'Entity' | 'Date' | 'Boolean'
 
-export type TEntityAttr = {
+export interface IEntityAttr {
   name: string
   dataType: TDataType
   defaultValue?: number | string
@@ -22,12 +22,26 @@ export type TEntityAttr = {
 
 export type TEntity = {
   code: string
-  attrs: Array<TEntityAttr>
+  descAttr?: string
+  attrs: Array<IEntityAttr>
   select (): Promise<Array<unknown>>
 }
 
-export type TDataTableColumn = {
+export interface IDataTableColumn {
   id: string
   label?: string
   dataType: TDataType
+}
+
+export interface IProduct {
+  id: number
+  title: string
+  price: number
+  description: string
+  category: string
+  image: string
+  rating: {
+    rate: number
+    count: number
+  }
 }
