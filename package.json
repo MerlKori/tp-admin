@@ -1,29 +1,25 @@
 {
-  "name": "app",
-  "private": true,
-  "type": "module",
+  "name": "nuxt3_monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "lint": "eslint .",
-    "postinstall": "nuxt prepare"
+    "packages": "dotenv -- pnpm --filter",
+    "ui": "pnpm packages @nuxt3-monorepo/ui",
+    "data": "pnpm packages @nuxt3-monorepo/data",
+    "app": "pnpm packages @nuxt3-monorepo/app",
+    "dev": "pnpm app dev",
+    "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lintfix": "pnpm lint --fix",
+    "prepare": "husky"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
-    "eslint": "^8.28.0",
-    "nuxt": "^3.9.3",
-    "nuxt-primevue": "^0.2.2",
-    "typescript": "^4.9.3",
-    "vue": "^3.4.14",
-    "vue-router": "^4.2.5"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "^0.5.1",
-    "pinia": "^2.1.7",
-    "primevue": "^3.46.0",
-    "yup": "^1.3.3"
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11"
   }
 }
