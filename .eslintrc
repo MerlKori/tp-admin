@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "rules": {
+    "vue/multi-word-component-names": 0,
+    "curly": 0,
+    "import/no-named-as-default": 0,
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  }
+}

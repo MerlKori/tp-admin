@@ -1,0 +1,63 @@
+:root {
+  --base-margin: 1rem;
+}
+
+.m-1 {
+  margin: var(--base-margin);
+}
+
+.mx-1 {
+  margin-left: var(--base-margin);
+  margin-right: var(--base-margin);
+}
+
+.my-1 {
+  margin-top: var(--base-margin);
+  margin-bottom: var(--base-margin);
+}
+
+.mt-1 {
+  margin-top: var(--base-margin);
+}
+
+.mb-1 {
+  margin-bottom: var(--base-margin);
+}
+
+.ml-1 {
+  margin-left: var(--base-margin);
+}
+
+.mr-1 {
+  margin-right: var(--base-margin);
+}
+
+.m-2 {
+  margin: calc(var(--base-margin) * 2);
+}
+
+.mx-2 {
+  margin-left: calc(var(--base-margin) * 2);
+  margin-right: calc(var(--base-margin) * 2);
+}
+
+.my-2 {
+  margin-top: calc(var(--base-margin) * 2);
+  margin-bottom: calc(var(--base-margin) * 2);
+}
+
+.mt-2 {
+  margin-top: calc(var(--base-margin) * 2);
+}
+
+.mb-2 {
+  margin-bottom: calc(var(--base-margin) * 2);
+}
+
+.ml-2 {
+  margin-left: calc(var(--base-margin) * 2);
+}
+
+.mr-2 {
+  margin-right: calc(var(--base-margin) * 2);
+}
