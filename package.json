@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "packages": "dotenv -- pnpm --filter",
-    "ui": "pnpm packages @nuxt3-monorepo/ui",
-    "data": "pnpm packages @nuxt3-monorepo/data",
+    "core": "pnpm packages @nuxt3-monorepo/core",
     "app": "pnpm packages @nuxt3-monorepo/app",
     "dev": "pnpm app dev",
     "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",

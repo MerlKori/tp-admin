@@ -5,8 +5,7 @@ export default defineNuxtConfig({
   ssr: false,
 
   extends: [
-    '@nuxt3-monorepo/ui',
-    '@nuxt3-monorepo/data'
+    '@nuxt3-monorepo/core'
   ],
 
   modules: [
@@ -21,10 +20,23 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '../ui/style/index.css'
+    '@nuxt3-monorepo/core/style/index.css'
   ],
+
+  pinia: {
+    storesDirs: [
+      './stores/*',
+      '../core/stores/*'
+    ]
+  },
 
   routeRules: {
     '/': { redirect: '/dashboard' }
+  },
+
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.API_URL
+    }
   }
 })
