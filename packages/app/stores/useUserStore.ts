@@ -1,5 +1,5 @@
 import { defineStore, acceptHMRUpdate } from 'pinia'
-import type { IObject } from '~/types'
+// import type { IObject } from '~/types'
 
 interface IUser {
   token: string | null

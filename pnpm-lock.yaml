@@ -26,9 +26,15 @@ importers:
       '@pinia/nuxt':
         specifier: ^0.5.1
         version: 0.5.1(rollup@4.12.0)(typescript@5.3.3)(vue@3.4.21)
+      gql-query-builder:
+        specifier: ^3.8.0
+        version: 3.8.0
       nuxt:
         specifier: ^3.10.3
         version: 3.10.3(eslint@8.57.0)(typescript@5.3.3)(vite@5.1.4)
+      ofetch:
+        specifier: ^1.3.3
+        version: 1.3.3
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.3.3)(vue@3.4.21)
@@ -39,12 +45,46 @@ importers:
         specifier: ^4.3.0
         version: 4.3.0(vue@3.4.21)
     devDependencies:
-      '@nuxt3-monorepo/data':
+      '@nuxt3-monorepo/core':
         specifier: workspace:^
-        version: link:../data
-      '@nuxt3-monorepo/ui':
-        specifier: workspace:^
-        version: link:../ui
+        version: link:../core
+
+  packages/core:
+    dependencies:
+      '@pinia/nuxt':
+        specifier: ^0.5.1
+        version: 0.5.1(rollup@4.12.0)(typescript@5.3.3)(vue@3.4.21)
+      nuxt-icons:
+        specifier: ^3.2.1
+        version: 3.2.1(rollup@4.12.0)
+      pinia:
+        specifier: ^2.1.7
+        version: 2.1.7(typescript@5.3.3)(vue@3.4.21)
+      primevue:
+        specifier: ^3.49.1
+        version: 3.49.1(vue@3.4.21)
+      yup:
+        specifier: ^1.3.3
+        version: 1.3.3
+    devDependencies:
+      '@nuxt/devtools':
+        specifier: latest
+        version: 1.0.8(nuxt@3.10.3)(rollup@4.12.0)(vite@5.1.4)
+      '@nuxtjs/google-fonts':
+        specifier: ^3.1.3
+        version: 3.1.3(rollup@4.12.0)
+      '@nuxtjs/i18n':
+        specifier: npm:@nuxtjs/i18n-edge
+        version: /@nuxtjs/i18n-edge@8.1.1-28473619.c43842f(rollup@4.12.0)(vue@3.4.21)
+      nuxt:
+        specifier: ^3.8.2
+        version: 3.10.3(eslint@8.57.0)(rollup@4.12.0)(typescript@5.3.3)(vite@5.1.4)
+      vue:
+        specifier: ^3.3.10
+        version: 3.4.21(typescript@5.3.3)
+      vue-router:
+        specifier: ^4.2.5
+        version: 4.3.0(vue@3.4.21)
 
   packages/data:
     dependencies:
@@ -61,9 +101,6 @@ importers:
       '@nuxt/devtools':
         specifier: latest
         version: 1.0.8(nuxt@3.10.3)(rollup@4.12.0)(vite@5.1.4)
-      '@nuxt3-monorepo/ui':
-        specifier: workspace:^
-        version: link:../ui
       '@nuxtjs/i18n':
         specifier: npm:@nuxtjs/i18n-edge
         version: /@nuxtjs/i18n-edge@8.1.1-28473619.c43842f(rollup@4.12.0)(vue@3.4.21)
@@ -4161,6 +4198,10 @@ packages:
     dependencies:
       get-intrinsic: 1.2.4
     dev: true
+
+  /gql-query-builder@3.8.0:
+    resolution: {integrity: sha512-q0PncZTrLDeyiH4R7YH1ISM+XGB4NvQ8eTm/Wr/sHSuquFZvqvDpGyMhbgoCZDc8kNAK8GOdfh3nI2GCLREFvw==}
+    dev: false
 
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
